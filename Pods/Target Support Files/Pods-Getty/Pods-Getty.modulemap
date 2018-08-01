@@ -1,0 +1,6 @@
+framework module Pods_Getty {
+  umbrella header "Pods-Getty-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33998920210F9F34007BA329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3399891F210F9F34007BA329 /* AppDelegate.swift */; };
+		33998925210F9F34007BA329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33998923210F9F34007BA329 /* Main.storyboard */; };
+		33998927210F9F36007BA329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33998926210F9F36007BA329 /* Assets.xcassets */; };
+		3399892A210F9F36007BA329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33998928210F9F36007BA329 /* LaunchScreen.storyboard */; };
+		33998935210F9F36007BA329 /* GettyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33998934210F9F36007BA329 /* GettyTests.swift */; };
+		33998940210F9F36007BA329 /* GettyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3399893F210F9F36007BA329 /* GettyUITests.swift */; };
+		33E7852E21109D9500B06C8C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E7852D21109D9500B06C8C /* MainVC.swift */; };
+		33E7853321109E9A00B06C8C /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33E7853121109DF500B06C8C /* SourceSansPro-Bold.ttf */; };
+		33E7853421109E9A00B06C8C /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33E7853221109DF500B06C8C /* SourceSansPro-Regular.ttf */; };
+		33E7853521109E9A00B06C8C /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33E7853021109DF500B06C8C /* SourceSansPro-SemiBold.ttf */; };
+		33E785382110A0E200B06C8C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E785362110A0E200B06C8C /* APIManager.swift */; };
+		33E785392110A0E200B06C8C /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E785372110A0E200B06C8C /* AppManager.swift */; };
+		33E7853B2110A57400B06C8C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E7853A2110A57400B06C8C /* LoginVC.swift */; };
+		33E7853D2110B01D00B06C8C /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E7853C2110B01D00B06C8C /* SignupVC.swift */; };
+		33E785402110BA9F00B06C8C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E7853F2110BA9F00B06C8C /* UserModel.swift */; };
+		33E785422110FD1700B06C8C /* BirthdayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E785412110FD1700B06C8C /* BirthdayVC.swift */; };
+		33E78544211105DB00B06C8C /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E78543211105DB00B06C8C /* GenderVC.swift */; };
+		33E7854621110F0700B06C8C /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E7854521110F0700B06C8C /* EmailVC.swift */; };
+		757F42CA9478CB27A3A76C72 /* Pods_Getty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5E2B54554FC07D5998CB82 /* Pods_Getty.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33998931210F9F36007BA329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33998914210F9F34007BA329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3399891B210F9F34007BA329;
+			remoteInfo = Getty;
+		};
+		3399893C210F9F36007BA329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33998914210F9F34007BA329 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3399891B210F9F34007BA329;
+			remoteInfo = Getty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3399891C210F9F34007BA329 /* Getty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3399891F210F9F34007BA329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33998924210F9F34007BA329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33998926210F9F36007BA329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33998929210F9F36007BA329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3399892B210F9F36007BA329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33998930210F9F36007BA329 /* GettyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GettyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33998934210F9F36007BA329 /* GettyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettyTests.swift; sourceTree = "<group>"; };
+		33998936210F9F36007BA329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3399893B210F9F36007BA329 /* GettyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GettyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3399893F210F9F36007BA329 /* GettyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettyUITests.swift; sourceTree = "<group>"; };
+		33998941210F9F36007BA329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33E7852D21109D9500B06C8C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		33E7853021109DF500B06C8C /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		33E7853121109DF500B06C8C /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		33E7853221109DF500B06C8C /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		33E785362110A0E200B06C8C /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		33E785372110A0E200B06C8C /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		33E7853A2110A57400B06C8C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		33E7853C2110B01D00B06C8C /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		33E7853F2110BA9F00B06C8C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		33E785412110FD1700B06C8C /* BirthdayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayVC.swift; sourceTree = "<group>"; };
+		33E78543211105DB00B06C8C /* GenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderVC.swift; sourceTree = "<group>"; };
+		33E7854521110F0700B06C8C /* EmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
+		4C5E2B54554FC07D5998CB82 /* Pods_Getty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Getty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		924633243A33202261D18928 /* Pods-Getty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Getty/Pods-Getty.debug.xcconfig"; sourceTree = "<group>"; };
+		A87F110FE29588DDAFF5A041 /* Pods-Getty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Getty.release.xcconfig"; path = "Pods/Target Support Files/Pods-Getty/Pods-Getty.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33998919210F9F34007BA329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757F42CA9478CB27A3A76C72 /* Pods_Getty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3399892D210F9F36007BA329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33998938210F9F36007BA329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14433CC66310AD9489AA2264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C5E2B54554FC07D5998CB82 /* Pods_Getty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33998913210F9F34007BA329 = {
+			isa = PBXGroup;
+			children = (
+				3399891E210F9F34007BA329 /* Getty */,
+				33998933210F9F36007BA329 /* GettyTests */,
+				3399893E210F9F36007BA329 /* GettyUITests */,
+				3399891D210F9F34007BA329 /* Products */,
+				8E082C1359D351387ABF2B8F /* Pods */,
+				14433CC66310AD9489AA2264 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3399891D210F9F34007BA329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3399891C210F9F34007BA329 /* Getty.app */,
+				33998930210F9F36007BA329 /* GettyTests.xctest */,
+				3399893B210F9F36007BA329 /* GettyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3399891E210F9F34007BA329 /* Getty */ = {
+			isa = PBXGroup;
+			children = (
+				3399891F210F9F34007BA329 /* AppDelegate.swift */,
+				33E785362110A0E200B06C8C /* APIManager.swift */,
+				33E785372110A0E200B06C8C /* AppManager.swift */,
+				33E7853E2110BA8C00B06C8C /* DataModel */,
+				33E7852F21109DD800B06C8C /* Fonts */,
+				33E7852C21109D8100B06C8C /* Main */,
+				33998923210F9F34007BA329 /* Main.storyboard */,
+				33998926210F9F36007BA329 /* Assets.xcassets */,
+				33998928210F9F36007BA329 /* LaunchScreen.storyboard */,
+				3399892B210F9F36007BA329 /* Info.plist */,
+			);
+			path = Getty;
+			sourceTree = "<group>";
+		};
+		33998933210F9F36007BA329 /* GettyTests */ = {
+			isa = PBXGroup;
+			children = (
+				33998934210F9F36007BA329 /* GettyTests.swift */,
+				33998936210F9F36007BA329 /* Info.plist */,
+			);
+			path = GettyTests;
+			sourceTree = "<group>";
+		};
+		3399893E210F9F36007BA329 /* GettyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3399893F210F9F36007BA329 /* GettyUITests.swift */,
+				33998941210F9F36007BA329 /* Info.plist */,
+			);
+			path = GettyUITests;
+			sourceTree = "<group>";
+		};
+		33E7852C21109D8100B06C8C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				33E7852D21109D9500B06C8C /* MainVC.swift */,
+				33E7853A2110A57400B06C8C /* LoginVC.swift */,
+				33E7853C2110B01D00B06C8C /* SignupVC.swift */,
+				33E785412110FD1700B06C8C /* BirthdayVC.swift */,
+				33E78543211105DB00B06C8C /* GenderVC.swift */,
+				33E7854521110F0700B06C8C /* EmailVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		33E7852F21109DD800B06C8C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				33E7853121109DF500B06C8C /* SourceSansPro-Bold.ttf */,
+				33E7853221109DF500B06C8C /* SourceSansPro-Regular.ttf */,
+				33E7853021109DF500B06C8C /* SourceSansPro-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		33E7853E2110BA8C00B06C8C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				33E7853F2110BA9F00B06C8C /* UserModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		8E082C1359D351387ABF2B8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				924633243A33202261D18928 /* Pods-Getty.debug.xcconfig */,
+				A87F110FE29588DDAFF5A041 /* Pods-Getty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3399891B210F9F34007BA329 /* Getty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33998944210F9F36007BA329 /* Build configuration list for PBXNativeTarget "Getty" */;
+			buildPhases = (
+				8A351851BB574C86E0CE2FC6 /* [CP] Check Pods Manifest.lock */,
+				33998918210F9F34007BA329 /* Sources */,
+				33998919210F9F34007BA329 /* Frameworks */,
+				3399891A210F9F34007BA329 /* Resources */,
+				9D769B96F5F651DB8E03EDD0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Getty;
+			productName = Getty;
+			productReference = 3399891C210F9F34007BA329 /* Getty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3399892F210F9F36007BA329 /* GettyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33998947210F9F36007BA329 /* Build configuration list for PBXNativeTarget "GettyTests" */;
+			buildPhases = (
+				3399892C210F9F36007BA329 /* Sources */,
+				3399892D210F9F36007BA329 /* Frameworks */,
+				3399892E210F9F36007BA329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33998932210F9F36007BA329 /* PBXTargetDependency */,
+			);
+			name = GettyTests;
+			productName = GettyTests;
+			productReference = 33998930210F9F36007BA329 /* GettyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3399893A210F9F36007BA329 /* GettyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3399894A210F9F36007BA329 /* Build configuration list for PBXNativeTarget "GettyUITests" */;
+			buildPhases = (
+				33998937210F9F36007BA329 /* Sources */,
+				33998938210F9F36007BA329 /* Frameworks */,
+				33998939210F9F36007BA329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3399893D210F9F36007BA329 /* PBXTargetDependency */,
+			);
+			name = GettyUITests;
+			productName = GettyUITests;
+			productReference = 3399893B210F9F36007BA329 /* GettyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33998914210F9F34007BA329 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Han;
+				TargetAttributes = {
+					3399891B210F9F34007BA329 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					3399892F210F9F36007BA329 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3399891B210F9F34007BA329;
+					};
+					3399893A210F9F36007BA329 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3399891B210F9F34007BA329;
+					};
+				};
+			};
+			buildConfigurationList = 33998917210F9F34007BA329 /* Build configuration list for PBXProject "Getty" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33998913210F9F34007BA329;
+			productRefGroup = 3399891D210F9F34007BA329 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3399891B210F9F34007BA329 /* Getty */,
+				3399892F210F9F36007BA329 /* GettyTests */,
+				3399893A210F9F36007BA329 /* GettyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3399891A210F9F34007BA329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33E7853321109E9A00B06C8C /* SourceSansPro-Bold.ttf in Resources */,
+				33E7853421109E9A00B06C8C /* SourceSansPro-Regular.ttf in Resources */,
+				33E7853521109E9A00B06C8C /* SourceSansPro-SemiBold.ttf in Resources */,
+				3399892A210F9F36007BA329 /* LaunchScreen.storyboard in Resources */,
+				33998927210F9F36007BA329 /* Assets.xcassets in Resources */,
+				33998925210F9F34007BA329 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3399892E210F9F36007BA329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33998939210F9F36007BA329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A351851BB574C86E0CE2FC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Getty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D769B96F5F651DB8E03EDD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Getty/Pods-Getty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Getty/Pods-Getty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33998918210F9F34007BA329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33E7853D2110B01D00B06C8C /* SignupVC.swift in Sources */,
+				33E7854621110F0700B06C8C /* EmailVC.swift in Sources */,
+				33E785402110BA9F00B06C8C /* UserModel.swift in Sources */,
+				33E785382110A0E200B06C8C /* APIManager.swift in Sources */,
+				33E785422110FD1700B06C8C /* BirthdayVC.swift in Sources */,
+				33998920210F9F34007BA329 /* AppDelegate.swift in Sources */,
+				33E7852E21109D9500B06C8C /* MainVC.swift in Sources */,
+				33E785392110A0E200B06C8C /* AppManager.swift in Sources */,
+				33E7853B2110A57400B06C8C /* LoginVC.swift in Sources */,
+				33E78544211105DB00B06C8C /* GenderVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3399892C210F9F36007BA329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33998935210F9F36007BA329 /* GettyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33998937210F9F36007BA329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33998940210F9F36007BA329 /* GettyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33998932210F9F36007BA329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3399891B210F9F34007BA329 /* Getty */;
+			targetProxy = 33998931210F9F36007BA329 /* PBXContainerItemProxy */;
+		};
+		3399893D210F9F36007BA329 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3399891B210F9F34007BA329 /* Getty */;
+			targetProxy = 3399893C210F9F36007BA329 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33998923210F9F34007BA329 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33998924210F9F34007BA329 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33998928210F9F36007BA329 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33998929210F9F36007BA329 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33998942210F9F36007BA329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33998943210F9F36007BA329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33998945210F9F36007BA329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924633243A33202261D18928 /* Pods-Getty.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4URJ54RTED;
+				INFOPLIST_FILE = Getty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Han.Getty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33998946210F9F36007BA329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A87F110FE29588DDAFF5A041 /* Pods-Getty.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4URJ54RTED;
+				INFOPLIST_FILE = Getty/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Han.Getty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33998948210F9F36007BA329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GettyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Han.GettyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Getty.app/Getty";
+			};
+			name = Debug;
+		};
+		33998949210F9F36007BA329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GettyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Han.GettyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Getty.app/Getty";
+			};
+			name = Release;
+		};
+		3399894B210F9F36007BA329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GettyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Han.GettyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Getty;
+			};
+			name = Debug;
+		};
+		3399894C210F9F36007BA329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GettyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Han.GettyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Getty;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33998917210F9F34007BA329 /* Build configuration list for PBXProject "Getty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33998942210F9F36007BA329 /* Debug */,
+				33998943210F9F36007BA329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33998944210F9F36007BA329 /* Build configuration list for PBXNativeTarget "Getty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33998945210F9F36007BA329 /* Debug */,
+				33998946210F9F36007BA329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33998947210F9F36007BA329 /* Build configuration list for PBXNativeTarget "GettyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33998948210F9F36007BA329 /* Debug */,
+				33998949210F9F36007BA329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3399894A210F9F36007BA329 /* Build configuration list for PBXNativeTarget "GettyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3399894B210F9F36007BA329 /* Debug */,
+				3399894C210F9F36007BA329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33998914210F9F34007BA329 /* Project object */;
+}
