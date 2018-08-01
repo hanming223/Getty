@@ -56,6 +56,8 @@ class BirthdayVC: UIViewController {
         
         AppManager.shared.birthday = birthdayTextField.text
         
+        let genderVC = AppManager.shared.getViewControllerWithId(id: "GenderVC") as! GenderVC
+        self.navigationController?.pushViewController(genderVC, animated: true)
         
     }
     

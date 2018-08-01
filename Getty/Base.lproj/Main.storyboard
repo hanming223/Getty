@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZn-9c-9yF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b8o-Tc-Lvq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -245,6 +245,7 @@
                                             <color key="titleColor" red="0.66666666669999997" green="0.25490196079999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="loginTapped:" destination="t2R-we-ZTt" eventType="touchUpInside" id="Ad6-XX-bMU"/>
                                             <action selector="loginTapped:" destination="Kjo-Cg-eJ4" eventType="touchUpInside" id="jZa-Kx-k4B"/>
                                         </connections>
                                     </button>
@@ -286,6 +287,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OmM-iD-i0a"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="xpm-p5-OSd" id="QFp-Tv-mUH"/>
+                        <outlet property="usernameTextField" destination="VMc-Fg-INm" id="WAJ-O7-Xiz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Opd-MS-EQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -840,10 +845,10 @@ Getty Terms and Conditions and our Privacy Policy</string>
             </objects>
             <point key="canvasLocation" x="3240.8000000000002" y="170.46476761619192"/>
         </scene>
-        <!--View Controller-->
+        <!--EmailVC-->
         <scene sceneID="WCF-W3-rwi">
             <objects>
-                <viewController id="2jS-mu-EFB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EmailVC" id="2jS-mu-EFB" customClass="EmailVC" customModule="Getty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Irg-ya-Wbg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -859,6 +864,7 @@ Getty Terms and Conditions and our Privacy Policy</string>
                                 </constraints>
                                 <state key="normal" image="back_button"/>
                                 <connections>
+                                    <action selector="backTapped:" destination="2jS-mu-EFB" eventType="touchUpInside" id="Iv1-H3-sYL"/>
                                     <action selector="backTapped:" destination="t2R-we-ZTt" eventType="touchUpInside" id="sFs-Tl-X1I"/>
                                     <action selector="backTapped:" destination="fZn-9c-9yF" eventType="touchUpInside" id="uqm-XY-yUQ"/>
                                     <action selector="onBackTapped:" destination="v8F-fb-Jh8" eventType="touchUpInside" id="70P-98-7ZC"/>
@@ -889,6 +895,17 @@ Getty Terms and Conditions and our Privacy Policy</string>
                                             <constraint firstItem="PBc-WM-okd" firstAttribute="centerY" secondItem="9mo-t6-flf" secondAttribute="centerY" id="B4v-jb-FNn"/>
                                             <constraint firstItem="PBc-WM-okd" firstAttribute="centerX" secondItem="9mo-t6-flf" secondAttribute="centerX" id="f46-r3-Z4h"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjL-Jy-yL2">
                                         <rect key="frame" x="0.0" y="0.0" width="131.5" height="35"/>
@@ -905,6 +922,17 @@ Getty Terms and Conditions and our Privacy Policy</string>
                                             <constraint firstItem="6AI-FY-zeW" firstAttribute="centerX" secondItem="cjL-Jy-yL2" secondAttribute="centerX" id="Esz-Lz-55V"/>
                                             <constraint firstItem="6AI-FY-zeW" firstAttribute="centerY" secondItem="cjL-Jy-yL2" secondAttribute="centerY" id="mpK-Gw-7Tt"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -921,10 +949,10 @@ Getty Terms and Conditions and our Privacy Policy</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dw-4F-lQN">
-                                <rect key="frame" x="37" y="269" width="300" height="129"/>
+                                <rect key="frame" x="37" y="202.5" width="300" height="128.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMA-wI-G2J">
-                                        <rect key="frame" x="2" y="0.0" width="296" height="58"/>
+                                        <rect key="frame" x="2" y="0.0" width="296" height="57.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TqI-2U-Jay">
                                                 <rect key="frame" x="20" y="18" width="256" height="22"/>
@@ -966,7 +994,7 @@ Getty Terms and Conditions and our Privacy Policy</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03r-vf-oXL">
-                                        <rect key="frame" x="0.0" y="68" width="300" height="61"/>
+                                        <rect key="frame" x="0.0" y="67.5" width="300" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="03r-vf-oXL" secondAttribute="height" multiplier="276:56" id="DRs-nM-DdN"/>
                                         </constraints>
@@ -975,6 +1003,7 @@ Getty Terms and Conditions and our Privacy Policy</string>
                                             <color key="titleColor" red="0.66666666669999997" green="0.25490196079999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="continueTapped:" destination="2jS-mu-EFB" eventType="touchUpInside" id="pWd-tq-RnE"/>
                                             <action selector="continueTapped:" destination="v8F-fb-Jh8" eventType="touchUpInside" id="pwx-b4-4Kc"/>
                                             <action selector="loginTapped:" destination="Kjo-Cg-eJ4" eventType="touchUpInside" id="b2Q-BO-NN5"/>
                                             <action selector="signupTapped:" destination="wQQ-hj-DyR" eventType="touchUpInside" id="Ndg-8e-JC3"/>
@@ -1000,7 +1029,7 @@ Getty Terms and Conditions and our Privacy Policy</string>
                         <constraints>
                             <constraint firstItem="fNq-Fc-V93" firstAttribute="centerX" secondItem="Irg-ya-Wbg" secondAttribute="centerX" id="2vq-3f-esh"/>
                             <constraint firstItem="5Dw-4F-lQN" firstAttribute="centerX" secondItem="Irg-ya-Wbg" secondAttribute="centerX" id="3DA-0G-Dg8"/>
-                            <constraint firstItem="5Dw-4F-lQN" firstAttribute="centerY" secondItem="Irg-ya-Wbg" secondAttribute="centerY" id="4fm-g1-sxf"/>
+                            <constraint firstItem="5Dw-4F-lQN" firstAttribute="centerY" secondItem="Irg-ya-Wbg" secondAttribute="centerY" multiplier="0.8" id="4fm-g1-sxf"/>
                             <constraint firstItem="SbH-bh-SNU" firstAttribute="top" secondItem="vYK-dt-sRA" secondAttribute="top" id="7PP-BU-V0B"/>
                             <constraint firstItem="SbH-bh-SNU" firstAttribute="leading" secondItem="vYK-dt-sRA" secondAttribute="leading" constant="7" id="CSu-au-Km5"/>
                             <constraint firstAttribute="trailing" secondItem="pJd-wN-GVd" secondAttribute="trailing" id="O6c-av-6H6"/>
@@ -1015,6 +1044,13 @@ Getty Terms and Conditions and our Privacy Policy</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vYK-dt-sRA"/>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="PBc-WM-okd" id="DK3-cr-tvo"/>
+                        <outlet property="emailTextField" destination="TqI-2U-Jay" id="tRM-Bt-aHL"/>
+                        <outlet property="emailView" destination="9mo-t6-flf" id="HCI-ld-pX5"/>
+                        <outlet property="phoneLabel" destination="6AI-FY-zeW" id="TC9-Vd-3LD"/>
+                        <outlet property="phoneView" destination="cjL-Jy-yL2" id="9U6-Gp-rZU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UEJ-5o-eXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

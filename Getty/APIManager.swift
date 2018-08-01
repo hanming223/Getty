@@ -16,11 +16,49 @@ class APIManager: NSObject {
     static let shared = APIManager()
     
     
-    //sign up
+    //check username validation
     
     func checkUsernameValidation(params: [String: String], completion: @escaping (Error?, JSON)->()){
         
+        let urlString = baseURL + "username_check"
+        
+        Alamofire.request(urlString, method: .post, parameters: params,encoding: JSONEncoding.default, headers: nil).responseJSON {
+            response in
+            switch response.result {
+            case .success(let value):
+                completion(nil, JSON(value))
+                break
+            case .failure(let error):
+                completion(error, JSON.null)
+            }
+        }
+        
+    }
+    
+    //sign up
+    
+    func signup(params: [String: Any], completion: @escaping (Error?, JSON)->()){
+        
         let urlString = baseURL + "register"
+        
+        Alamofire.request(urlString, method: .post, parameters: params,encoding: JSONEncoding.default, headers: nil).responseJSON {
+            response in
+            switch response.result {
+            case .success(let value):
+                completion(nil, JSON(value))
+                break
+            case .failure(let error):
+                completion(error, JSON.null)
+            }
+        }
+        
+    }
+    
+    //Login
+    
+    func login(params: [String: String], completion: @escaping (Error?, JSON)->()){
+        
+        let urlString = baseURL + "login"
         
         Alamofire.request(urlString, method: .post, parameters: params,encoding: JSONEncoding.default, headers: nil).responseJSON {
             response in

@@ -19,15 +19,21 @@ class GenderVC: UIViewController {
     }
     
     @IBAction func maleTapped(_ sender: Any) {
-        AppManager.shared.male = 0
+        AppManager.shared.gender = 0
+        let emailVC = AppManager.shared.getViewControllerWithId(id: "EmailVC") as! EmailVC
+        self.navigationController?.pushViewController(emailVC, animated: true)
     }
     
     @IBAction func femaleTapped(_ sender: Any) {
-        AppManager.shared.male = 1
+        AppManager.shared.gender = 1
+        let emailVC = AppManager.shared.getViewControllerWithId(id: "EmailVC") as! EmailVC
+        self.navigationController?.pushViewController(emailVC, animated: true)
     }
     
     @IBAction func skipTapped(_ sender: Any) {
-        AppManager.shared.male = -1
+        AppManager.shared.gender = -1
+        let emailVC = AppManager.shared.getViewControllerWithId(id: "EmailVC") as! EmailVC
+        self.navigationController?.pushViewController(emailVC, animated: true)
     }
     
     @IBAction func backTapped(_ sender: Any) {
