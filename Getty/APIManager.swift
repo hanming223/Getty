@@ -12,7 +12,7 @@ import Alamofire
 
 class APIManager: NSObject {
     
-    let baseURL = "http://getty.leezhur.com/api/"
+    let baseURL = "http://gettythepartyapp.com/api/"
     static let shared = APIManager()
     
     

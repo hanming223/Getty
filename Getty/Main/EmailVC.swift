@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import PhoneNumberKit
 
 class EmailVC: UIViewController {
 
@@ -17,6 +18,7 @@ class EmailVC: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var phoneTextField: PhoneNumberTextField!
     
     var tap1: UITapGestureRecognizer!
     var tap2: UITapGestureRecognizer!
@@ -50,14 +52,15 @@ class EmailVC: UIViewController {
             phoneLabel.textColor = UIColor.init(rgb: 0xAA4111)
             emailLabel.textColor = UIColor.white
             
-            emailTextField.placeholder = "Your phone number"
             emailTextField.placeHolderColor = UIColor.white
             
             if emailTextField.isFirstResponder == true{
                 emailTextField.resignFirstResponder()
-                emailTextField.keyboardType = .phonePad
-                emailTextField.becomeFirstResponder()
+                phoneTextField.becomeFirstResponder()
             }
+            
+            emailTextField.isHidden = true
+            phoneTextField.isHidden = false
             
             isPhonenumber = true
             
@@ -67,14 +70,15 @@ class EmailVC: UIViewController {
             emailLabel.textColor = UIColor.init(rgb: 0xAA4111)
             phoneLabel.textColor = UIColor.white
             
-            emailTextField.placeholder = "Your email address"
             emailTextField.placeHolderColor = UIColor.white
             
-            if emailTextField.isFirstResponder == true{
-                emailTextField.resignFirstResponder()
-                emailTextField.keyboardType = .emailAddress
+            if phoneTextField.isFirstResponder == true{
+                phoneTextField.resignFirstResponder()
                 emailTextField.becomeFirstResponder()
             }
+            
+            emailTextField.isHidden = false
+            phoneTextField.isHidden = true
             
             isPhonenumber = false
             
@@ -84,12 +88,32 @@ class EmailVC: UIViewController {
     
     @IBAction func continueTapped(_ sender: Any) {
         
+        var number: String!
+        
         if isPhonenumber == true{
             
-            if AppManager.shared.isValidPhoneNumber(value: emailTextField.text!) == false{
+            if phoneTextField.text?.first != "+"{
                 AppManager.shared.showAlert(msg: "Please enter valid phone number.", activity: self)
                 return
             }
+            
+            do{
+                let phoneNumber = try PhoneNumberKit().parse(phoneTextField.text!)
+                
+                number = "+" + String(phoneNumber.countryCode) + String(phoneNumber.nationalNumber)
+                print(number)
+                
+                if AppManager.shared.isValidEmail(testStr: number){
+                    AppManager.shared.showAlert(msg: "Please enter valid phone number.", activity: self)
+                    return
+                }
+
+            }catch{
+                AppManager.shared.showAlert(msg: "Please enter valid phone number.", activity: self)
+                return
+            }
+            
+            
             
         }else{
             
@@ -107,7 +131,7 @@ class EmailVC: UIViewController {
                       "username": AppManager.shared.userName ] as [String: Any]
         
         if isPhonenumber == true{
-            params["phone_number"] = emailTextField.text
+            params["phone_number"] = number
         }else{
             params["email"] = emailTextField.text
         }
@@ -127,6 +151,12 @@ class EmailVC: UIViewController {
                 if response["error"] == JSON.null{
                     
                     print(response["success"]["token"].stringValue)
+                    
+                    UserDefaults.standard.setValue(true, forKey: IS_LOGGEDIN)
+                    UserDefaults.standard.setValue(response["data"]["token"].stringValue, forKey: TOKEN)
+                    
+                    let homeNav = AppManager.shared.getViewControllerWithId(id: "HomeTab") as! UITabBarController
+                    UIApplication.shared.keyWindow?.rootViewController = homeNav
                     
                 }else{
                     //signup failure

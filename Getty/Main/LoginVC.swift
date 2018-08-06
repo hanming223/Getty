@@ -42,7 +42,12 @@ class LoginVC: UIViewController {
                 if response["result"].stringValue == "success"{
                     
                     print(response["data"]["token"].stringValue)
-                    AppManager.shared.showAlert(msg: "Login Success", activity: self)
+                    
+                    UserDefaults.standard.setValue(true, forKey: IS_LOGGEDIN)
+                    UserDefaults.standard.setValue(response["data"]["token"].stringValue, forKey: TOKEN)
+                    
+                    let homeNav = AppManager.shared.getViewControllerWithId(id: "HomeTab") as! UITabBarController
+                    UIApplication.shared.keyWindow?.rootViewController = homeNav
                     
                 }else{
                     //signup failure
@@ -57,8 +62,7 @@ class LoginVC: UIViewController {
             }
             
         }
-        
-        
+
     }
     
     @IBAction func backTapped(_ sender: Any) {

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		333621BC21182E4A00535DEC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333621BB21182E4A00535DEC /* ProfileVC.swift */; };
+		333621BF21182F9B00535DEC /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333621BE21182F9B00535DEC /* Checkbox.swift */; };
 		33998920210F9F34007BA329 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3399891F210F9F34007BA329 /* AppDelegate.swift */; };
 		33998925210F9F34007BA329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33998923210F9F34007BA329 /* Main.storyboard */; };
 		33998927210F9F36007BA329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33998926210F9F36007BA329 /* Assets.xcassets */; };
 		3399892A210F9F36007BA329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33998928210F9F36007BA329 /* LaunchScreen.storyboard */; };
 		33998935210F9F36007BA329 /* GettyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33998934210F9F36007BA329 /* GettyTests.swift */; };
 		33998940210F9F36007BA329 /* GettyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3399893F210F9F36007BA329 /* GettyUITests.swift */; };
+		33DD561B211670540026591D /* MyPartyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD561A211670540026591D /* MyPartyVC.swift */; };
+		33DD561D211670990026591D /* MyPartyAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD561C211670990026591D /* MyPartyAddVC.swift */; };
 		33E7852E21109D9500B06C8C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E7852D21109D9500B06C8C /* MainVC.swift */; };
 		33E7853321109E9A00B06C8C /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33E7853121109DF500B06C8C /* SourceSansPro-Bold.ttf */; };
 		33E7853421109E9A00B06C8C /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33E7853221109DF500B06C8C /* SourceSansPro-Regular.ttf */; };
@@ -46,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		333621BB21182E4A00535DEC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		333621BE21182F9B00535DEC /* Checkbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		3399891C210F9F34007BA329 /* Getty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Getty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3399891F210F9F34007BA329 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33998924210F9F34007BA329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +64,8 @@
 		3399893B210F9F36007BA329 /* GettyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GettyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3399893F210F9F36007BA329 /* GettyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettyUITests.swift; sourceTree = "<group>"; };
 		33998941210F9F36007BA329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DD561A211670540026591D /* MyPartyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPartyVC.swift; sourceTree = "<group>"; };
+		33DD561C211670990026591D /* MyPartyAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPartyAddVC.swift; sourceTree = "<group>"; };
 		33E7852D21109D9500B06C8C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		33E7853021109DF500B06C8C /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		33E7853121109DF500B06C8C /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
@@ -109,6 +117,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		333621BA21182E3C00535DEC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				333621BB21182E4A00535DEC /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		333621BD21182F9200535DEC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				333621BE21182F9B00535DEC /* Checkbox.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		33998913210F9F34007BA329 = {
 			isa = PBXGroup;
 			children = (
@@ -134,12 +158,15 @@
 		3399891E210F9F34007BA329 /* Getty */ = {
 			isa = PBXGroup;
 			children = (
+				333621BD21182F9200535DEC /* Library */,
 				3399891F210F9F34007BA329 /* AppDelegate.swift */,
 				33E785362110A0E200B06C8C /* APIManager.swift */,
 				33E785372110A0E200B06C8C /* AppManager.swift */,
 				33E7853E2110BA8C00B06C8C /* DataModel */,
 				33E7852F21109DD800B06C8C /* Fonts */,
 				33E7852C21109D8100B06C8C /* Main */,
+				33DD5619211670410026591D /* My Party */,
+				333621BA21182E3C00535DEC /* Profile */,
 				33998923210F9F34007BA329 /* Main.storyboard */,
 				33998926210F9F36007BA329 /* Assets.xcassets */,
 				33998928210F9F36007BA329 /* LaunchScreen.storyboard */,
@@ -164,6 +191,15 @@
 				33998941210F9F36007BA329 /* Info.plist */,
 			);
 			path = GettyUITests;
+			sourceTree = "<group>";
+		};
+		33DD5619211670410026591D /* My Party */ = {
+			isa = PBXGroup;
+			children = (
+				33DD561A211670540026591D /* MyPartyVC.swift */,
+				33DD561C211670990026591D /* MyPartyAddVC.swift */,
+			);
+			path = "My Party";
 			sourceTree = "<group>";
 		};
 		33E7852C21109D8100B06C8C /* Main */ = {
@@ -366,6 +402,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -374,6 +411,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -390,11 +428,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E7853D2110B01D00B06C8C /* SignupVC.swift in Sources */,
+				33DD561D211670990026591D /* MyPartyAddVC.swift in Sources */,
 				33E7854621110F0700B06C8C /* EmailVC.swift in Sources */,
 				33E785402110BA9F00B06C8C /* UserModel.swift in Sources */,
+				333621BF21182F9B00535DEC /* Checkbox.swift in Sources */,
 				33E785382110A0E200B06C8C /* APIManager.swift in Sources */,
 				33E785422110FD1700B06C8C /* BirthdayVC.swift in Sources */,
 				33998920210F9F34007BA329 /* AppDelegate.swift in Sources */,
+				33DD561B211670540026591D /* MyPartyVC.swift in Sources */,
+				333621BC21182E4A00535DEC /* ProfileVC.swift in Sources */,
 				33E7852E21109D9500B06C8C /* MainVC.swift in Sources */,
 				33E785392110A0E200B06C8C /* AppManager.swift in Sources */,
 				33E7853B2110A57400B06C8C /* LoginVC.swift in Sources */,

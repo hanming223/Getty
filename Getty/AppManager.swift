@@ -11,7 +11,10 @@ import MBProgressHUD
 import Alamofire
 
 let USER_DATA = "userdata"
+let TOKEN = "auth_token"
+let IS_LOGGEDIN = "is_loggedin"
 
+let THEME_COLOR = UIColor.init(rgb: 0xFF8232)
 
 final class AppManager {
     

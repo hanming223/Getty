@@ -15,5 +15,7 @@ target 'Getty' do
 
 	pod 'SDWebImage', '~> 4.0'
 
+	pod 'PhoneNumberKit', '~> 2.1'
+
 
 end

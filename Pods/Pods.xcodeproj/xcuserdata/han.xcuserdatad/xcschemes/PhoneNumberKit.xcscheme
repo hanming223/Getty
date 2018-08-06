@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6AC54A5D5B31D0B9E59695E0EA1C394E"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "8C5BD10883BD185426DD737247F56DEC"
+               BlueprintName = "PhoneNumberKit"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SDWebImage.framework">
+               BuildableName = "PhoneNumberKit.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
