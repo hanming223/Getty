@@ -46,8 +46,8 @@ class LoginVC: UIViewController {
                     UserDefaults.standard.setValue(true, forKey: IS_LOGGEDIN)
                     UserDefaults.standard.setValue(response["data"]["token"].stringValue, forKey: TOKEN)
                     
-                    let homeNav = AppManager.shared.getViewControllerWithId(id: "HomeTab") as! UITabBarController
-                    UIApplication.shared.keyWindow?.rootViewController = homeNav
+                    let homeTab = AppManager.shared.getViewControllerWithId(id: "HomeTabBar") as! HomeTabBar
+                    UIApplication.shared.keyWindow?.rootViewController = homeTab
                     
                 }else{
                     //signup failure

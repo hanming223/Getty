@@ -1072,10 +1072,10 @@ Getty Terms and Conditions and our Privacy Policy</string>
             </objects>
             <point key="canvasLocation" x="4056.8000000000002" y="169.56521739130437"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar-->
         <scene sceneID="oBy-fh-MD4">
             <objects>
-                <tabBarController storyboardIdentifier="HomeTab" id="vnV-Y9-W6E" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeTabBar" id="vnV-Y9-W6E" customClass="HomeTabBar" customModule="Getty" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yan-Rz-PrJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

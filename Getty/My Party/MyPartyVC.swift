@@ -14,6 +14,11 @@ class MyPartyVC: UIViewController {
         super.viewDidLoad()
 
         
+        var colors = [UIColor]()
+        colors.append(UIColor.init(rgb: 0xFFA334))
+        colors.append(UIColor.init(rgb: 0xFFC856))
+        navigationController?.navigationBar.setGradientBackground(colors: colors)
+        
     }
 
     @IBAction func addButtonTapped(_ sender: Any) {

@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         
         if UserDefaults.standard.bool(forKey: IS_LOGGEDIN){
-            let homeNav = AppManager.shared.getViewControllerWithId(id: "HomeTab") as! UITabBarController
-            window?.rootViewController = homeNav
+            let homeTab = AppManager.shared.getViewControllerWithId(id: "HomeTabBar") as! HomeTabBar
+            window?.rootViewController = homeTab
         }else{
             let mainNav = AppManager.shared.getViewControllerWithId(id: "MainNav") as! UINavigationController
             window?.rootViewController = mainNav
